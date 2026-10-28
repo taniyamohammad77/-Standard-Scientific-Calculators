@@ -2,7 +2,7 @@
 
 Planning baseline for an independent calculator targeting the functionality and interaction model of the **Casio fx-991ES PLUS, 2nd edition** shown in the user's reference image.
 
-**Status:** Phase 1 foundation complete and awaiting review. A responsive application shell, mode navigation, settings/reset and worker connection are implemented. Numerical calculations are not implemented yet. Phase 2 requires user approval.
+**Status:** Phase 2 scientific engine complete and awaiting review. Arithmetic/scientific expressions now evaluate in the worker with exact fractions and supported root/pi forms, angle preferences, formatting and typed errors. The current input form is temporary; the photo-matched keypad and MODE/SETUP interface require Phase 3 approval. Advanced modes remain pending.
 
 ## Agreed stack and scope
 
@@ -40,3 +40,7 @@ Current review package: [Phase 0 design](docs/PHASE_0_DESIGN.md). Official-manua
 Use Node 24.19.0 (`.nvmrc`), then `npm ci` and `npm run dev`. Run `npm run build` for production and `npm test` for unit tests. Install browser tooling with `npx playwright install chromium`, then run `npm run test:e2e`. In this cloud environment, use `CHROMIUM_PATH=/usr/bin/chromium npm run test:e2e` to use installed Chromium. `npm run check` combines build/typecheck, unit tests and browser tests.
 
 [Phase 1 report](docs/PHASE_1_REPORT.md) includes evidence, screenshots and limitations. No public deployment is configured.
+
+## Scientific engine review
+
+See [Phase 2 report](docs/PHASE_2_REPORT.md) for supported syntax, project limits, screenshots and actual validation. Enter `1/3+1/6`, `sqrt(8)`, `sin(30)` or `log(8,2)` in Scientific mode. No exact-device-compatibility claim is made.

@@ -58,3 +58,7 @@ Status: user-authorized scope change; engineering choices ready for review. The 
 ## ADR-007 — Phase 1 foundation boundary
 
 Status: implemented under user approval. Root app contains React/Vite and validation tooling only; Phase 0 numerical/editor candidates remain isolated research dependencies. Worker health checks exercise connection lifecycle without pretending to evaluate expressions. Typed AST/value contracts are introduced now; expression validation and mathematical evaluation follow in Phase 2. Navigable feature groups are not represented as verified physical menu numbering. Phase 1 is ready for review, with Phase 2 approval still required.
+
+## ADR-008 — Phase 2 numerical and transport policy
+
+Implemented under explicit user Phase 2 approval. Use a bounded dedicated parser, exact BigInt rational/supported symbolic values and decimal.js 10.6.0 for 40-digit approximate operations. Input text is parsed inside the worker; no externally supplied AST is trusted or evaluated. The worker transports bounded display/decimal/exactness results rather than unserializable class instances. Project precedence, percent semantics, numeric limits and formatting behavior are documented in PHASE_2_REPORT.md and remain provisional pending device verification. The temporary expression form makes engine behavior reviewable; it does not replace the reference keypad requirement. Phase 3 remains unapproved.

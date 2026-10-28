@@ -76,3 +76,7 @@ Follow the [phase plan](IMPLEMENTATION_PLAN.md): establish contracts in Phase 1,
 ## Keypad-driven final interface
 
 Replace temporary sidebar navigation with the reference keypad and display menus during Phase 3. Declarative key definitions route primary/SHIFT/ALPHA actions through the command registry and reducer. Model MODE, SETUP and context menus as separate state; retain a return cursor/context on dismissal. See [KEYPAD_REQUIREMENTS.md](KEYPAD_REQUIREMENTS.md).
+
+## Phase 2 module mapping
+
+src/engine/parser.ts owns the runtime AST and grammar; numeric.ts owns internal rational/symbolic/approximate values; calculate.ts owns function dispatch and current formatting. src/worker/protocol.ts validates text/options and calls the evaluator within engine.worker.ts. The browser receives string presentation plus exactness metadata; it does not evaluate mathematics. ScientificPanel.tsx is a temporary review client with revision-based invalidation. Consolidating display/editor commands into the final keypad remains Phase 3 work.

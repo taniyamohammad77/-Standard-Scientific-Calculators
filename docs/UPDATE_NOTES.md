@@ -55,3 +55,7 @@ User approved Phase 1. Added pinned React/TypeScript/Vite application, responsiv
 ## Reference keypad clarification
 
 User requires the same buttons as the supplied photo and MODE/SETUP support for advanced workflows. Added KEYPAD_REQUIREMENTS.md with button rows, modifier legends, menu distinctions and acceptance tests; linked PRD, architecture and validation. Phase 1 sidebar is explicitly temporary. No application behavior changed and no next-phase approval inferred.
+
+## Phase 2 — Scientific core completed
+
+Implemented parser/AST bounds, exact rational and supported symbolic arithmetic, decimal scientific functions, format/angle options, typed errors and worker calculation transport. Added an expression review form and preserved input on angle changes. Pinned decimal.js and included its license in public/licenses. Build/typecheck passed, 105 unit tests and six desktop/mobile browser tests passed, production audit reported zero known vulnerabilities. Browser label issues found during validation were fixed and rechecked. Saved screenshots and detailed PHASE_2_REPORT.md with project limits and unverified compatibility behavior. Phase 3 keypad/MODE/SETUP work awaits approval.

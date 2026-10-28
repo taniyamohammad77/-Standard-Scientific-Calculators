@@ -87,3 +87,7 @@ See PRODUCT_SPECIFICATION.md for S4. Implement colon-separated statements as val
 ## Phase 1 implementation status
 
 Root application scaffolding, pinned runtime/toolchain and worker health protocol are implemented; see PHASE_1_REPORT.md. Numeric evaluation and AST runtime validation remain future engine work. Earlier statements that no scaffold exists describe the Phase 0 baseline and are superseded by this status.
+
+## Phase 2 implementation status
+
+The bounded parser/AST evaluator and scientific real engine are implemented. decimal.js 10.6.0 uses an isolated 40-digit context; BigInt rationals and limited symbolic sqrt/pi values preserve supported exact forms. Worker calculation requests validate text/options and parse inside the worker, avoiding an untrusted external AST protocol. See PHASE_2_REPORT.md for actual limits, formatting semantics and remaining device-compatibility gaps. Constants/catalogs and advanced algorithms remain future work.

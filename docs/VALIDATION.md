@@ -57,3 +57,7 @@ See PHASE_1_REPORT.md: 16 foundation unit tests and four desktop/mobile Chromium
 ## Required reference UI checks
 
 Phase 3 must pass the keypad row/legend comparison and MODE/SHIFT→MODE menu journeys in [KEYPAD_REQUIREMENTS.md](KEYPAD_REQUIREMENTS.md). Advanced capability tests must exercise keypad/menu reachability, not only direct engine calls or temporary sidebar navigation.
+
+## Phase 2 evidence
+
+105 unit tests and six desktop/mobile Chromium browser tests passed, along with build/typecheck. Coverage and concrete commands are in PHASE_2_REPORT.md. New checks cover scientific arithmetic and invalid domains, parser budgets, exact fraction/root/pi cases, random bounds, formatting, calculation-worker transport and browser error recovery. This is independent mathematical validation, not a matching-device comparison.

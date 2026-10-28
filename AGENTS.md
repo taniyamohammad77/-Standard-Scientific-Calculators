@@ -2,7 +2,7 @@
 
 ## Current authorization
 
-The user authorized Phase 1; its foundation is ready for review. Phase 2 is not approved. Complete only the current approved phase, show its deliverables and test results, and wait for explicit user approval before starting the next phase. Preserve the complete functional scope of the fx-991ES PLUS 2nd edition reference; implementation phases do not reduce the final target.
+The user authorized Phase 2; the scientific engine is ready for review. Phase 3 is not approved. Complete only the current approved phase, show its deliverables and test results, and wait for explicit user approval before starting the next phase. Preserve the complete functional scope of the fx-991ES PLUS 2nd edition reference; implementation phases do not reduce the final target.
 
 ## Working practices
 
@@ -37,7 +37,7 @@ Matrices, vectors, complex numbers, equations/SOLVE, calculus, statistics/regres
 
 ## Phase-by-phase execution
 
-Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 1 is ready for review; Phase 2 remains unapproved. All advanced modes remain required for final completion.
+Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 2 is ready for review; Phase 3 remains unapproved. All advanced modes remain required for final completion.
 
 ## Final keypad requirement
 

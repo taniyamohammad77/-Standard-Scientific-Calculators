@@ -19,3 +19,16 @@ describe('worker lifecycle',()=>{
  it('supersedes an earlier request',async()=>{const {client,ports}=setup();const p=client.check(0);const failure=expect(p).rejects.toThrow('Superseded');const q=client.check(1);await failure;ports[1].reply(handleRequest(ports[1].sent[0]));await q;client.dispose()});
 });
 it('mode/settings/reset transitions advance revision without mutating initial state',()=>{let s=reducer(initialState,{type:'mode',mode:'VECTOR'});s=reducer(s,{type:'angle',angle:'RAD'});expect(s).toEqual({mode:'VECTOR',angle:'RAD',revision:2});expect(reducer(s,{type:'reset'})).toEqual({...initialState,revision:3});expect(initialState.revision).toBe(0)});
+it('ignores callbacks from a terminated worker while a new request runs',async()=>{
+ const {client,ports}=setup();const old=client.check(0);const failure=expect(old).rejects.toThrow('Cancelled');client.cancel();await failure;
+ const next=client.check(1);ports[0].reply({bad:true});ports[0].onerror?.({} as ErrorEvent);expect(ports).toHaveLength(2);
+ ports[1].reply(handleRequest(ports[1].sent[0]));await next;client.dispose();
+});
+it('delivers a calculation result through the typed connection',async()=>{
+ const {client,ports}=setup();const p=client.evaluate('1/3+1/6',{angle:'DEG',format:'EXACT',digits:10},2);
+ ports[0].reply(handleRequest(ports[0].sent[0]));await expect(p).resolves.toMatchObject({display:'1/2',exact:true});client.dispose();
+});
+it('rejects a health result in response to an evaluation request',async()=>{
+ const {client,ports}=setup();const p=client.evaluate('2+2',{angle:'DEG',format:'EXACT',digits:10},0);const failure=expect(p).rejects.toThrow('Unexpected worker result');
+ const req=ports[0].sent[0];ports[0].reply({version:1,id:req.id,revision:req.revision,ok:true,status:'ready'});await failure;client.dispose();
+});

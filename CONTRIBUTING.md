@@ -21,3 +21,7 @@ Use the [implementation plan](docs/IMPLEMENTATION_PLAN.md). Scope each reviewabl
 ## Current phase
 
 Phase 1 is implemented and awaiting review. Use README.md for real build/test commands. Do not start Phase 2 before explicit user approval; the earlier Phase 0-only authorization is historical.
+
+## Current Phase 2 review boundary
+
+Phase 2 is implemented and awaits review; Phase 3 remains unapproved. Use npm run build, npm test and npm run test:e2e. The scientific expression form is temporary. Preserve the exact-button and MODE/SETUP requirements in KEYPAD_REQUIREMENTS.md when Phase 3 begins.

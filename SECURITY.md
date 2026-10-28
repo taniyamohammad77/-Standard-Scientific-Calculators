@@ -40,3 +40,7 @@ Include adversarial matrix/vector dimensions, oversized regression datasets, hug
 ## Security across delivery phases
 
 Apply security requirements throughout the [phase plan](docs/IMPLEMENTATION_PLAN.md): dependency/renderer review during Phase 0, safe parser and worker boundaries in Phases 1–3, adversarial mode limits in Phases 4–7, consolidated security checks in Phase 8 and tested production headers/PWA update controls in Phase 9. Do not defer input validation or computation bounds to the hardening phase. Report security gate failures in phase records without exposing secrets or sensitive exploit details.
+
+## Phase 2 implemented boundaries
+
+Expressions are tokenized with a dedicated allowlisted grammar; there is no JavaScript evaluation or unrestricted mathjs parser. Input length, node/depth and exact integer budgets constrain work; workers validate options and provide hard timeout termination. Error/result strings render as text. Browser tests exercise injection rejection and recovery. decimal.js license is retained under public/licenses; production advisory check had no known findings at Phase 2 validation time. This does not constitute a full security audit.
