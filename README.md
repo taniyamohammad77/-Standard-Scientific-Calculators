@@ -2,7 +2,7 @@
 
 Planning baseline for an independent calculator targeting the functionality and interaction model of the **Casio fx-991ES PLUS, 2nd edition** shown in the user's reference image.
 
-**Status:** Phase 0 design complete under user-revised scope; awaiting approval for Phase 1. Phase 1 has not started. This repository currently contains no runnable calculator, dependency manifest, or passing application tests. The earlier prototype has been removed from this checkout and preserved outside it for recovery.
+**Status:** Phase 1 foundation complete and awaiting review. A responsive application shell, mode navigation, settings/reset and worker connection are implemented. Numerical calculations are not implemented yet. Phase 2 requires user approval.
 
 ## Agreed stack and scope
 
@@ -34,3 +34,9 @@ The goal is complete functional parity, not a basic arithmetic substitute. Parit
 The [user-supplied specification](docs/PRODUCT_SPECIFICATION.md) adds display, memory, replay and multi-statement requirements. Phase 0 now includes nine numerical and seven editor smoke probes; official manual verification remains blocked. See the phase report for limitations.
 
 Current review package: [Phase 0 design](docs/PHASE_0_DESIGN.md). Official-manual verification is deferred at user direction; full parity is not claimed.
+
+## Run and validate
+
+Use Node 24.19.0 (`.nvmrc`), then `npm ci` and `npm run dev`. Run `npm run build` for production and `npm test` for unit tests. Install browser tooling with `npx playwright install chromium`, then run `npm run test:e2e`. In this cloud environment, use `CHROMIUM_PATH=/usr/bin/chromium npm run test:e2e` to use installed Chromium. `npm run check` combines build/typecheck, unit tests and browser tests.
+
+[Phase 1 report](docs/PHASE_1_REPORT.md) includes evidence, screenshots and limitations. No public deployment is configured.

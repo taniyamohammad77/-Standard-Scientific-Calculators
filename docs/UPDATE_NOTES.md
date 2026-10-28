@@ -47,3 +47,7 @@ Rechecked official support access; CONNECT 403 persists and custom allowed hosts
 ## Phase 0 review package — revised reference scope
 
 Following the user's direction to leave network/manual setup, recorded PHASE_0_DESIGN.md with AST/value boundaries, provisional precision, library adapter decisions, worker budgets, state policy and requirement-to-validation mapping. Preserved REF-01–09 as deferred compatibility gaps. Phase 0 is complete under the revised scope and awaits user review; Phase 1 is not started. Existing nine numerical/seven editor probes are prior evidence, not newly executed application tests. Validated documentation links, fences and whitespace.
+
+## Phase 1 — Foundation completed
+
+User approved Phase 1. Added pinned React/TypeScript/Vite application, responsive shell, typed AST/value contracts, reducer, worker protocol/lifecycle, Vitest/Playwright tests and CI. Clean lockfile install/build passed; 16 unit and four desktop/mobile browser tests passed. Production dependency audit reported zero known vulnerabilities. Screenshots and limitations recorded in PHASE_1_REPORT.md. Phase 2 remains unapproved.

@@ -54,3 +54,7 @@ Status: accepted by explicit user direction, 2026-10-28. Supersedes ADR-004's au
 ## ADR-006 — Proceed with a provisional reference baseline
 
 Status: user-authorized scope change; engineering choices ready for review. The user asked to leave network setup and proceed with S1/S4. Official research REF-01–09 is deferred, not verified. PHASE_0_DESIGN.md records bounded numerical/editor choices and a traceability baseline. Phase 0 is complete under this revised research scope and awaits review. Exact compatibility remains unproven; all advanced features remain required. ADR-005's explicit per-phase approval remains in force.
+
+## ADR-007 — Phase 1 foundation boundary
+
+Status: implemented under user approval. Root app contains React/Vite and validation tooling only; Phase 0 numerical/editor candidates remain isolated research dependencies. Worker health checks exercise connection lifecycle without pretending to evaluate expressions. Typed AST/value contracts are introduced now; expression validation and mathematical evaluation follow in Phase 2. Navigable feature groups are not represented as verified physical menu numbering. Phase 1 is ready for review, with Phase 2 approval still required.

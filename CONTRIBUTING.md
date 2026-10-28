@@ -17,3 +17,7 @@ Review each advanced feature end to end: entry workflow, commands/modifiers, typ
 ## Phased delivery
 
 Use the [implementation plan](docs/IMPLEMENTATION_PLAN.md). Scope each reviewable change to a coherent phase deliverable and include its phase number, requirement IDs and actual validation. Keep roadmap status and update notes current. Recheck dependent phases when shared contracts change; do not call a phase complete with unexplained required failures.
+
+## Current phase
+
+Phase 1 is implemented and awaiting review. Use README.md for real build/test commands. Do not start Phase 2 before explicit user approval; the earlier Phase 0-only authorization is historical.

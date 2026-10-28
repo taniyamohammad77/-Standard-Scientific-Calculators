@@ -2,7 +2,7 @@
 
 ## Current authorization
 
-The user has authorized Phase 0 research. Complete only the current approved phase, show its deliverables and test results, and wait for explicit user approval before starting the next phase. Preserve the complete functional scope of the fx-991ES PLUS 2nd edition reference; implementation phases do not reduce the final target.
+The user authorized Phase 1; its foundation is ready for review. Phase 2 is not approved. Complete only the current approved phase, show its deliverables and test results, and wait for explicit user approval before starting the next phase. Preserve the complete functional scope of the fx-991ES PLUS 2nd edition reference; implementation phases do not reduce the final target.
 
 ## Working practices
 
@@ -27,7 +27,7 @@ The user has authorized Phase 0 research. Complete only the current approved pha
 
 Use the validation plan and requirement IDs. Test both normal and edge behavior, reference limits, errors, precision and state transitions. Preserve test exit codes; report skipped and unrun checks separately. Do not weaken assertions to obtain a passing run. Document deviations from the physical reference. Update dependency lockfiles only as part of an authorized dependency change, with license and vulnerability checks.
 
-At the end of work report changes, checks actually run, remaining risks and required next steps. There are no application build or test commands in this documentation-only baseline.
+At the end of work report changes, checks actually run, remaining risks and required next steps. Use npm run build, npm test and npm run test:e2e as described in README.md.
 
 ## Agreed stack and completeness rules
 
@@ -37,4 +37,4 @@ Matrices, vectors, complex numbers, equations/SOLVE, calculus, statistics/regres
 
 ## Phase-by-phase execution
 
-Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 0 is ready for review under revised scope; Phase 1 remains unapproved. All advanced modes remain required for final completion.
+Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 1 is ready for review; Phase 2 remains unapproved. All advanced modes remain required for final completion.

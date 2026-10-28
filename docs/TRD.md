@@ -83,3 +83,7 @@ See PRODUCT_SPECIFICATION.md for S4. Implement colon-separated statements as val
 ## Current implementation baseline
 
 [PHASE_0_DESIGN.md](PHASE_0_DESIGN.md) selects provisional adapter roles, numeric precision, AST boundaries, worker budgets and session-state policy. These guide Phase 1 after approval. Device-specific precision, limits and behavior remain deferred; the project settings must not be described as Casio specifications.
+
+## Phase 1 implementation status
+
+Root application scaffolding, pinned runtime/toolchain and worker health protocol are implemented; see PHASE_1_REPORT.md. Numeric evaluation and AST runtime validation remain future engine work. Earlier statements that no scaffold exists describe the Phase 0 baseline and are superseded by this status.

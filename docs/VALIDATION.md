@@ -49,3 +49,7 @@ Use the evidence columns and completion-record template in the [implementation p
 ## S4 specification coverage
 
 Add coverage for colon statements, intermediate result/Ans updates, statement errors, continuous calculations, replay/multi-replay editing, nine-variable recall/store isolation, memory protection/reset scopes, 10+2 formatting boundaries and fast sequential key input. Match actual manual behavior before declaring parity. Treat the advertised 417 count as an inventory cross-check, not 417 automatically passing tests. Hardware/commercial specifications are outside functional app acceptance; see PRODUCT_SPECIFICATION.md.
+
+## Phase 1 evidence
+
+See PHASE_1_REPORT.md: 16 foundation unit tests and four desktop/mobile Chromium browser tests passed, plus a clean install and production build/typecheck. These validate infrastructure and shell behavior, not calculator mathematics. Earlier no-application-test statements describe Phase 0.
