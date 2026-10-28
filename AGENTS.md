@@ -38,3 +38,7 @@ Matrices, vectors, complex numbers, equations/SOLVE, calculus, statistics/regres
 ## Phase-by-phase execution
 
 Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 1 is ready for review; Phase 2 remains unapproved. All advanced modes remain required for final completion.
+
+## Final keypad requirement
+
+Follow docs/KEYPAD_REQUIREMENTS.md: preserve the supplied photo’s button layout and functional legends; implement MODE and SHIFT→MODE SETUP with correct advanced mode/context access. The Phase 1 sidebar is temporary and must not become the final calculator interface.

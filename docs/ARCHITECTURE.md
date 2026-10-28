@@ -72,3 +72,7 @@ Matrix/vector modes combine a dimension-aware data editor, per-mode named storag
 ## Incremental implementation
 
 Follow the [phase plan](IMPLEMENTATION_PLAN.md): establish contracts in Phase 1, core values/grammar in Phase 2 and UI/editor/state integration in Phase 3. Phases 4–7 extend mode adapters without bypassing shared contracts. Phases 8–9 validate cross-mode compatibility and delivery. Keep module boundaries stable where possible; changes to numeric values, AST or worker protocols require affected regression tests and decision-log updates.
+
+## Keypad-driven final interface
+
+Replace temporary sidebar navigation with the reference keypad and display menus during Phase 3. Declarative key definitions route primary/SHIFT/ALPHA actions through the command registry and reducer. Model MODE, SETUP and context menus as separate state; retain a return cursor/context on dismissal. See [KEYPAD_REQUIREMENTS.md](KEYPAD_REQUIREMENTS.md).

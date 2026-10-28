@@ -53,3 +53,7 @@ Add coverage for colon statements, intermediate result/Ans updates, statement er
 ## Phase 1 evidence
 
 See PHASE_1_REPORT.md: 16 foundation unit tests and four desktop/mobile Chromium browser tests passed, plus a clean install and production build/typecheck. These validate infrastructure and shell behavior, not calculator mathematics. Earlier no-application-test statements describe Phase 0.
+
+## Required reference UI checks
+
+Phase 3 must pass the keypad row/legend comparison and MODE/SHIFT→MODE menu journeys in [KEYPAD_REQUIREMENTS.md](KEYPAD_REQUIREMENTS.md). Advanced capability tests must exercise keypad/menu reachability, not only direct engine calls or temporary sidebar navigation.

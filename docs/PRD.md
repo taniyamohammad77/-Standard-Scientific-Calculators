@@ -54,3 +54,7 @@ Finalize reference manual/region; decide visual fidelity and independent brandin
 ## 8. Advanced functionality commitment
 
 PRD-06 through PRD-13 are mandatory release capabilities, not optional extras. Matrices and vectors require their own data editors, storage, menus and result navigation, not only library operations. Statistics requires dataset/frequency workflows and all reference-supported regressions. BASE-N requires reference signed-width and logical semantics. Equations require coefficient input and solution browsing. Every mode must integrate with its verified key layers, setup, error and reset behavior. Phased development may deliver subsets for review, but full compatibility cannot be declared until all required modes and operations pass the audit.
+
+## Reference keypad requirement
+
+The final UI must reproduce the supplied photo’s button arrangement and primary/secondary functional labels. MODE and SHIFT→MODE (SETUP) are mandatory, with all advanced capabilities reachable through the correct key/mode/context workflows. The Phase 1 sidebar is temporary. See [KEYPAD_REQUIREMENTS.md](KEYPAD_REQUIREMENTS.md) for row inventory and acceptance checks.

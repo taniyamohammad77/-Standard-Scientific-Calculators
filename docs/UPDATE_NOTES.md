@@ -51,3 +51,7 @@ Following the user's direction to leave network/manual setup, recorded PHASE_0_D
 ## Phase 1 — Foundation completed
 
 User approved Phase 1. Added pinned React/TypeScript/Vite application, responsive shell, typed AST/value contracts, reducer, worker protocol/lifecycle, Vitest/Playwright tests and CI. Clean lockfile install/build passed; 16 unit and four desktop/mobile browser tests passed. Production dependency audit reported zero known vulnerabilities. Screenshots and limitations recorded in PHASE_1_REPORT.md. Phase 2 remains unapproved.
+
+## Reference keypad clarification
+
+User requires the same buttons as the supplied photo and MODE/SETUP support for advanced workflows. Added KEYPAD_REQUIREMENTS.md with button rows, modifier legends, menu distinctions and acceptance tests; linked PRD, architecture and validation. Phase 1 sidebar is explicitly temporary. No application behavior changed and no next-phase approval inferred.
