@@ -59,3 +59,7 @@ User requires the same buttons as the supplied photo and MODE/SETUP support for 
 ## Phase 2 — Scientific core completed
 
 Implemented parser/AST bounds, exact rational and supported symbolic arithmetic, decimal scientific functions, format/angle options, typed errors and worker calculation transport. Added an expression review form and preserved input on angle changes. Pinned decimal.js and included its license in public/licenses. Build/typecheck passed, 105 unit tests and six desktop/mobile browser tests passed, production audit reported zero known vulnerabilities. Browser label issues found during validation were fixed and rechecked. Saved screenshots and detailed PHASE_2_REPORT.md with project limits and unverified compatibility behavior. Phase 3 keypad/MODE/SETUP work awaits approval.
+
+## Node 24 local-install compatibility fix
+
+A Windows user on Node 24.18.0 hit EBADENGINE because the root engine range unnecessarily required 24.19.x. Dependency engine declarations accept 24.18.0. Changed root manifest and lockfile engine range to >=24.18.0 <25, retained strict enforcement and the 24.19.0 CI pin, and updated local setup instructions. Validation on the cloud Node 24.19.0 runtime does not constitute a Windows 24.18.0 execution test.

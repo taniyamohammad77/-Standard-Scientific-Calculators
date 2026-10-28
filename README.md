@@ -37,7 +37,7 @@ Current review package: [Phase 0 design](docs/PHASE_0_DESIGN.md). Official-manua
 
 ## Run and validate
 
-Use Node 24.19.0 (`.nvmrc`), then `npm ci` and `npm run dev`. Run `npm run build` for production and `npm test` for unit tests. Install browser tooling with `npx playwright install chromium`, then run `npm run test:e2e`. In this cloud environment, use `CHROMIUM_PATH=/usr/bin/chromium npm run test:e2e` to use installed Chromium. `npm run check` combines build/typecheck, unit tests and browser tests.
+Use Node 24.18.0 or newer within Node 24 (`.nvmrc` pins the tested CI version 24.19.0), then `npm ci` and `npm run dev`. Run `npm run build` for production and `npm test` for unit tests. Install browser tooling with `npx playwright install chromium`, then run `npm run test:e2e`. In this cloud environment, use `CHROMIUM_PATH=/usr/bin/chromium npm run test:e2e` to use installed Chromium. `npm run check` combines build/typecheck, unit tests and browser tests.
 
 [Phase 1 report](docs/PHASE_1_REPORT.md) includes evidence, screenshots and limitations. No public deployment is configured.
 

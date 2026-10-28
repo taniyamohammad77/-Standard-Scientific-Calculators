@@ -1,6 +1,6 @@
 # Run the calculator in VS Code
 
-Install Node.js 24.19.0 and Git on your computer. Clone this repository and open its root folder in VS Code. If you already cloned it, pull the latest main branch first, preserving any local changes.
+Install Node.js 24.18.0 or newer within Node 24 and Git on your computer. Clone this repository and open its root folder in VS Code. If you already cloned it, pull the latest main branch first, preserving any local changes.
 
 Open **Terminal → Run Task → Start calculator**. The task installs locked dependencies with npm ci and starts Vite on port 5173. Open the localhost address printed in that terminal in your browser. The task binds to your own computer's loopback interface. Stop it with Ctrl+C in the task terminal before starting it again.
 
