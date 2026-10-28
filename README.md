@@ -28,3 +28,7 @@ Development follows the [phase-by-phase implementation plan](docs/IMPLEMENTATION
 8. [Update notes](docs/UPDATE_NOTES.md) and [decision log](docs/DECISIONS.md)
 
 The goal is complete functional parity, not a basic arithmetic substitute. Parity has not been established. Official documentation and device comparison must resolve the open items in the reference inventory before compatibility claims are made. Independent branding and original implementation are required; no vendor firmware or artwork is included.
+
+## Additional reference evidence
+
+The [user-supplied specification](docs/PRODUCT_SPECIFICATION.md) adds display, memory, replay and multi-statement requirements. Phase 0 now includes nine numerical and seven editor smoke probes; official manual verification remains blocked. See the phase report for limitations.

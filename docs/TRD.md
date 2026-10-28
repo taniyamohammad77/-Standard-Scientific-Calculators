@@ -75,3 +75,7 @@ Library outputs pass through mode-domain checks, numeric conversion rules and ce
 ## Delivery sequencing
 
 The [implementation plan](IMPLEMENTATION_PLAN.md) governs Phases 0–9. Establish numeric/editor evidence before adoption, then build shared contracts before specialist modes. Performance budgets, typed errors, worker cancellation and security requirements apply from their first relevant implementation, not only during final hardening. Record tested commands and results at each completion gate.
+
+## User-supplied specification constraints
+
+See PRODUCT_SPECIFICATION.md for S4. Implement colon-separated statements as validated structured sequences with bounded statement count, explicit execution/Ans updates and verified error/continuation semantics; never translate them to executable JavaScript. Nine-variable storage must use the verified variable whitelist. Display formatting must accommodate the reported 10+2 digits without treating that as internal precision. Rapid-input handling must preserve command ordering. Physical power/memory claims do not define web persistence automatically.

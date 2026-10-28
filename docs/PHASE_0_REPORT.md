@@ -20,7 +20,7 @@ npm audit --omit=dev
 
 Nine probes passed, zero failed/skipped: decimal addition; finite decimal versus exact rational distinction; a representative high-precision trigonometric identity; isolated precision configuration; matrix inverse; vector dot/cross products; complex multiplication; singular inverse rejection; mathjs BigNumber/fraction distinction. Advisory check reported zero known vulnerabilities at execution time, not an assurance of security. An initial run before installing dependencies failed module resolution; the clean lockfile install resolved it and all nine probes then executed successfully.
 
-MathLive's installed type declarations expose insert, executeCommand, getValue and keyboard-policy APIs. This is API inspection only. Template/cursor/keyboard/browser/accessibility compatibility is **unrun**, not passed. No editor adoption decision is made.
+MathLive's installed APIs were exercised in installed headless Chromium through a loopback research page. Seven probes passed: fraction/root/power insertion, cursor movement, selection replacement, backward deletion and LaTeX export. Harness: research/phase0/editor-spike.html; captured results: research/phase0/editor-results.json. Local assets were served by Python http.server (loopback); Chromium required host-approved execution. Initial DOM-dump attempts did not return results; a loopback result request captured the actual test output. Corrected font resolution to an absolute local URL after observing relative-path failures. These seven probes do not validate nested template navigation, physical-key equivalence, accessibility, touch or full browser compatibility; final editor adoption remains pending. No application was built.
 
 ## Numerical design recommendation, not reference validation
 
@@ -40,3 +40,7 @@ Saved an environment configuration draft adding only support.casio.com to the cu
 4. Show the completed Phase 0 report and obtain explicit approval before Phase 1.
 
 The application is not ready. No Phase 1 work or public deployment has occurred. Current independent numerical research is complete enough to review; the reference-dependent work cannot be honestly completed until access is available.
+
+## Resume and supplied specification
+
+On resume, current enforced network policy still listed no custom allowed hosts; the official support request again returned CONNECT 403. No duplicate draft was saved. The user's pasted product specifications are recorded as source S4 in PRODUCT_SPECIFICATION.md, with feature mappings and hardware exclusions. The browser editor probes now passed seven checks; nine earlier numerical probes remain recorded separately. Manual-specific gates remain blocked, so Phase 0 is incomplete and Phase 1 remains unapproved.

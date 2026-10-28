@@ -45,3 +45,7 @@ A library adoption spike must demonstrate editor template/cursor compatibility f
 ## Phase completion gates
 
 Use the evidence columns and completion-record template in the [implementation plan](IMPLEMENTATION_PLAN.md). Run meaningful checks as each feature is implemented; Phases 8–9 aggregate compatibility and release checks rather than deferring all testing until the end. Revalidate dependents after shared-engine changes. Record unrun, skipped, failing and passing checks separately; Phase 0 is blocked on official-reference access; later phases remain Not started.
+
+## S4 specification coverage
+
+Add coverage for colon statements, intermediate result/Ans updates, statement errors, continuous calculations, replay/multi-replay editing, nine-variable recall/store isolation, memory protection/reset scopes, 10+2 formatting boundaries and fast sequential key input. Match actual manual behavior before declaring parity. Treat the advertised 417 count as an inventory cross-check, not 417 automatically passing tests. Hardware/commercial specifications are outside functional app acceptance; see PRODUCT_SPECIFICATION.md.

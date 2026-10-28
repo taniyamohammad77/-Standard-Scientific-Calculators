@@ -57,3 +57,7 @@ REF-05 must establish dimensions, named storage, equation sizes, regression mode
 ## Phase 0 access status
 
 See [PHASE_0_REPORT.md](PHASE_0_REPORT.md). Official support access is currently denied by the proxy; no manual-derived facts or exact capacities were verified. REF-01–09 remain pending. An environment draft adding support.casio.com is saved but is not an applied network policy. Nine independent numerical-library probes passed; they are not reference fixtures.
+
+## Source S4 — User-supplied product specification
+
+Recorded the complete functional summary and physical/commercial distinctions in [PRODUCT_SPECIFICATION.md](PRODUCT_SPECIFICATION.md). S4 reports 417 functions, 10+2 digits, nine variables, memory protection, colon multi-statements, continuous calculation and replay/multi-replay. These are attributed user requirements, not independently verified manual facts. S4 has no original URL. REF-01–09 still require source/behavior verification. Do not infer internal precision from display digits or omit TABLE/regression scope because this summary does not enumerate it.

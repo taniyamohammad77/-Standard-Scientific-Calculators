@@ -20,7 +20,7 @@ A responsive, desktop-and-mobile browser application is the agreed first platfor
 | PRD-02 | Natural mathematical input | Editable fractions, mixed fractions, powers, roots, logs and calculus templates; cursor traverses template slots; linear input supported if present in reference |
 | PRD-03 | Arithmetic and scientific functions | Reference precedence, signs, implicit multiplication, scientific entry, trig/inverse/hyperbolic, logs/exponentials, powers/roots, factorial, percent and combinatorics |
 | PRD-04 | Output and setup | Verified Math/Line behavior, S⇔D, fraction conversion, FIX/SCI/NORM, ENG shifts, angle units and DMS; unsupported exact results never fabricated |
-| PRD-05 | Variables and calculation state | Ans, named variables, independent memory, RCL/STO, CALC substitution, replay and reset scopes match the reference |
+| PRD-05 | Variables and calculation state | Ans, nine variables (S4; names to verify), independent memory, memory protection, RCL/STO, CALC substitution, colon multi-statements, continuous calculation, replay/multi-replay and reset scopes match the reference |
 | PRD-06 | Numerical calculus and solve | Definite integration, numerical derivative, summation and SOLVE with documented domains, tolerances, limits and nonconvergence errors |
 | PRD-07 | Complex mode | Supported complex operations, imaginary unit, argument, conjugate, polar/rectangular conversion and display forms |
 | PRD-08 | Statistics | Dataset editing, one-variable summaries, supported regressions and predictions; invalid/degenerate data produces reference-compatible errors |

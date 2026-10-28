@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Phase 0 editor probe</title><body><math-field id="field" math-virtual-keyboard-policy="manual"></math-field><pre id="results">PENDING</pre><script type="module">
+import {MathfieldElement} from './node_modules/mathlive/mathlive.min.mjs';
+MathfieldElement.fontsDirectory=new URL('./node_modules/mathlive/fonts',location.href).href;
+const field=document.querySelector('#field');
+await customElements.whenDefined('math-field');
+await new Promise(resolve=>setTimeout(resolve,300));
+const checks=[];
+function check(name,condition){checks.push({name,passed:!!condition});}
+try{
+ field.value=''; field.insert('\\frac{1}{2}'); check('fraction insertion',field.value.includes('frac')&&field.value.includes('1')&&field.value.includes('2'));
+ field.value=''; field.insert('\\sqrt{16}'); check('root insertion',field.value.includes('sqrt')&&field.value.includes('16'));
+ field.value=''; field.insert('x^{2}'); check('power insertion',field.value.includes('x')&&field.value.includes('2'));
+ field.value='123'; field.executeCommand('moveToMathfieldEnd'); const before=field.position; field.executeCommand('moveToPreviousChar'); check('cursor moves left',field.position<before);
+ field.executeCommand('selectAll'); field.insert('7');check('selection replacement',field.value==='7');
+ field.executeCommand('deleteBackward');check('delete backward',field.value==='');
+ field.value='\\frac{1}{2}';const output=field.getValue('latex');check('latex export',output.includes('frac'));
+}catch(e){checks.push({name:e.message,passed:false});}
+document.querySelector('#results').textContent=JSON.stringify({passed:checks.filter(x=>x.passed).length,total:checks.length,checks});
+fetch('/probe-result?data='+encodeURIComponent(document.querySelector('#results').textContent));
+</script></body></html>

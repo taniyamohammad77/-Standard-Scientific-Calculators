@@ -39,3 +39,7 @@ Linked the plan from README, PRD, TRD, architecture, reference, validation, deve
 ## 2026-10-28 — Phase 0 started; reference access blocked
 
 Recorded explicit per-phase approval in ADR-005 and current execution rules. Added PHASE_0_REPORT.md and a pinned isolated candidate-library spike with nine passing numerical tests. npm audit reported zero known vulnerabilities. MathLive API inspected; browser compatibility unrun. Official Casio support request returned proxy CONNECT 403; saved a draft domain addition for support.casio.com, requiring user settings review/save and publication before retry. Phase 0 is Blocked/incomplete; all later phases are Not started. No application scaffold or deployment added.
+
+## 2026-10-28 — Phase 0 resumed and product specification captured
+
+Rechecked official support access; CONNECT 403 persists and custom allowed hosts remain empty. Ran the isolated MathLive browser probe: seven checks passed; captured harness/results added. Recorded user-supplied product list as S4 in PRODUCT_SPECIFICATION.md, separating app functions from physical/commercial claims. Updated PRD/TRD/validation/reference mappings for nine variables, 10+2 display, multi-statements, memory protection and replay. Official limits/precision still unverified; Phase 0 remains incomplete, with no Phase 1 work.

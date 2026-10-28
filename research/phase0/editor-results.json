@@ -1,0 +1,34 @@
+{
+  "passed": 7,
+  "total": 7,
+  "checks": [
+    {
+      "name": "fraction insertion",
+      "passed": true
+    },
+    {
+      "name": "root insertion",
+      "passed": true
+    },
+    {
+      "name": "power insertion",
+      "passed": true
+    },
+    {
+      "name": "cursor moves left",
+      "passed": true
+    },
+    {
+      "name": "selection replacement",
+      "passed": true
+    },
+    {
+      "name": "delete backward",
+      "passed": true
+    },
+    {
+      "name": "latex export",
+      "passed": true
+    }
+  ]
+}
