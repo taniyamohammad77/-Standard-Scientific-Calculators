@@ -1,0 +1,15 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import Decimal from 'decimal.js';
+import {create,all} from 'mathjs';
+const D=Decimal.clone({precision:40,rounding:Decimal.ROUND_HALF_UP});
+const math=create(all,{number:'BigNumber',precision:40});
+test('decimal arithmetic avoids binary 0.1+0.2 artifact',()=>assert.equal(new D('0.1').plus('0.2').toString(),'0.3'));
+test('decimal rational approximation is not an exact fraction type',()=>assert.notEqual(new D(1).div(3).times(3).toString(),'1'));
+test('decimal transcendental accuracy on a representative radian case',()=>assert.ok(new D(1).atan().times(4).cos().plus(1).abs().lt('1e-35')));
+test('decimal clone precision does not mutate global configuration',()=>assert.notEqual(D.precision,Decimal.precision));
+test('mathjs matrix inverse representative',()=>assert.deepEqual(math.inv([[1,2],[3,4]]),[[-2,1],[1.5,-.5]]));
+test('mathjs vector products representative',()=>{assert.equal(math.dot([1,2,3],[4,5,6]),32);assert.deepEqual(math.cross([1,0,0],[0,1,0]),[0,0,1])});
+test('mathjs complex arithmetic representative',()=>assert.equal(math.multiply(math.complex(1,1),math.complex(1,-1)).toString(),'2'));
+test('mathjs singular inverse rejects input',()=>assert.throws(()=>math.inv([[1,2],[2,4]])));
+test('mathjs approximate real and exact fraction domains remain distinct',()=>{assert.equal(math.add(math.bignumber('.1'),math.bignumber('.2')).toString(),'.3'.replace(/^\./,'0.'));assert.equal(math.add(math.fraction(1,3),math.fraction(1,6)).toFraction(),'1/2')});

@@ -2,7 +2,7 @@
 
 ## Current authorization
 
-This phase is repository cleanup and documentation. Do not resume application implementation until the user asks. Preserve the complete functional scope of the fx-991ES PLUS 2nd edition reference; implementation phases do not reduce the final target.
+The user has authorized Phase 0 research. Complete only the current approved phase, show its deliverables and test results, and wait for explicit user approval before starting the next phase. Preserve the complete functional scope of the fx-991ES PLUS 2nd edition reference; implementation phases do not reduce the final target.
 
 ## Working practices
 
@@ -31,10 +31,10 @@ At the end of work report changes, checks actually run, remaining risks and requ
 
 ## Agreed stack and completeness rules
 
-Use React + TypeScript + Vite and CSS, a separate TypeScript engine in Web Workers, Vitest and Playwright. Plan PWA offline delivery after core validation; no backend/database is required. MathLive, math.js and decimal.js remain candidates requiring documented compatibility/security/license evaluation. Do not install dependencies in this documentation-only phase.
+Use React + TypeScript + Vite and CSS, a separate TypeScript engine in Web Workers, Vitest and Playwright. Plan PWA offline delivery after core validation; no backend/database is required. MathLive, math.js and decimal.js remain candidates requiring documented compatibility/security/license evaluation. Phase 0 may install isolated research dependencies; application scaffolding belongs to Phase 1.
 
 Matrices, vectors, complex numbers, equations/SOLVE, calculus, statistics/regression, BASE-N, TABLE and constants/conversions are mandatory alongside standard functions and all verified modifier workflows. Never substitute a basic-calculator milestone for the complete scope. Every mode needs editing, state, formatting, errors and reference-backed tests, not only a numerical function call.
 
 ## Phase-by-phase execution
 
-Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. When the broader build is authorized, continue across completed phase gates without asking for routine approval again. Escalate only genuine blockers or separately required external actions. This documentation update does not start implementation. All advanced modes remain required for final completion.
+Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 0 is now in progress; later phases remain unapproved. All advanced modes remain required for final completion.

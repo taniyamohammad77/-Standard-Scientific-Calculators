@@ -2,7 +2,7 @@
 
 Planning baseline for an independent calculator targeting the functionality and interaction model of the **Casio fx-991ES PLUS, 2nd edition** shown in the user's reference image.
 
-**Status:** requirements and architecture only. Implementation is paused. This repository currently contains no runnable calculator, dependency manifest, or passing application tests. The earlier prototype has been removed from this checkout and preserved outside it for recovery.
+**Status:** Phase 0 research started; official-reference access is blocked. Phase 1 has not started. This repository currently contains no runnable calculator, dependency manifest, or passing application tests. The earlier prototype has been removed from this checkout and preserved outside it for recovery.
 
 ## Agreed stack and scope
 
@@ -14,7 +14,7 @@ Full scope includes matrices, vectors, complex numbers, simultaneous and quadrat
 
 ## Delivery approach
 
-Development follows the [phase-by-phase implementation plan](docs/IMPLEMENTATION_PLAN.md), from reference verification through foundations, standard functions, advanced modes, hardening and offline release. Every phase has deliverables, requirement mappings and completion evidence. All implementation phases are currently not started.
+Development follows the [phase-by-phase implementation plan](docs/IMPLEMENTATION_PLAN.md), from reference verification through foundations, standard functions, advanced modes, hardening and offline release. Every phase has deliverables, requirement mappings and completion evidence. Phase 0 research is recorded in [the Phase 0 report](docs/PHASE_0_REPORT.md). Each later phase requires explicit user approval.
 
 ## Read in this order
 

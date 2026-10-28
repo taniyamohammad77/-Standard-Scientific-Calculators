@@ -2,15 +2,15 @@
 
 ## Purpose and execution policy
 
-Build the complete fx-991ES PLUS 2nd edition functional scope in ordered, verifiable increments. This plan records the requested delivery method; the current change adds documentation only. No implementation phase has started. Begin Phase 0 when implementation/research work is next authorized.
+Build the complete fx-991ES PLUS 2nd edition functional scope in ordered, verifiable increments. Phase 0 research is authorized and started. The user requires a demonstration/report and explicit approval after each phase before the next phase starts.
 
-The sequence below is the default. Advance when the current phase's required checks pass and its evidence is recorded; do not require a fresh approval for every phase when the user has authorized the broader build. Ask only for a blocking product decision, missing access or a separately required publishing action. A failed required check prevents that phase being called complete. Continue independent work while diagnosing blockers. Record deliberate resequencing and dependency impacts rather than silently skipping scope.
+The sequence below is the default. Advance only when the current phase's required checks pass, its evidence is recorded, results are shown to the user, and the user explicitly approves the next phase. Ask only for a blocking product decision, missing access or a separately required publishing action. A failed required check prevents that phase being called complete. Continue independent work while diagnosing blockers. Record deliberate resequencing and dependency impacts rather than silently skipping scope.
 
 ## Roadmap
 
 | Phase | Deliverables | Required completion evidence | Requirement coverage | Status |
 |---|---|---|---|---|
-| 0 — Reference and design baseline | Matching official manual with source metadata; full key/menu inventory; limits and precision policy; numerical/editor library spikes; resolved blocking design decisions | REF-01–09 research artifacts or explicitly bounded outstanding device checks; accepted precision/adapter decisions; requirement-to-fixture matrix before affected implementation | All PRD IDs; REF-01–09 | Not started |
+| 0 — Reference and design baseline | Matching official manual with source metadata; full key/menu inventory; limits and precision policy; numerical/editor library spikes; resolved blocking design decisions | REF-01–09 research artifacts or explicitly bounded outstanding device checks; accepted precision/adapter decisions; requirement-to-fixture matrix before affected implementation | All PRD IDs; REF-01–09 | Blocked |
 | 1 — Project foundation | React/TypeScript/Vite/CSS scaffold; pinned runtime and lockfile; Vitest/Playwright; CI; pure engine/module boundaries; worker schemas and state skeleton | Clean install, production build, type checks and meaningful test execution; worker round-trip, stale-response rejection and error recovery; no placeholder pass claims | TRD-01–10 foundations; PRD-16 | Not started |
 | 2 — Core engine and standard calculation | Grammar/AST, typed numbers, precedence, arithmetic/scientific functions, angle units, fractions/exact forms, formatting, random/rounding and typed errors | Golden fixtures, numeric/domain boundaries, precision/format tests, invalid/adversarial input and resource budgets | PRD-03,04,14; TRD-01–03,07 | Not started |
 | 3 — Natural display and calculator interaction | Responsive keypad; structured templates; cursor/replay; SHIFT/ALPHA; mode/setup framework; Ans/variables/memory; CALC; keyboard/touch/accessibility | End-to-end editing/evaluation journeys; full applicable key-map tests; memory/reset/state tests; editor compatibility and injection checks | PRD-01,02,04,05,15 | Not started |

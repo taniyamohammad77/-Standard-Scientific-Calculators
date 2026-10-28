@@ -1,6 +1,6 @@
 # Contribution workflow
 
-Application development is currently paused pending the user's next instruction.
+Phase 0 research is authorized. Show phase results and wait for explicit user approval before starting each subsequent phase.
 
 For implementation work, select requirement IDs from the PRD and reference inventory, verify applicable manual behavior, and document the design before adding dependencies. Keep numerical algorithms separate from display and key handling. Every change should identify the behavior it implements and the reference evidence supporting it.
 

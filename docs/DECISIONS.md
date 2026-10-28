@@ -46,3 +46,7 @@ Status: accepted delivery approach by user direction, 2026-10-28.
 Decision: use IMPLEMENTATION_PLAN.md as the canonical Phases 0–9 roadmap, with explicit deliverables, dependencies, requirement mappings, status and completion evidence. Prefer tested vertical mode workflows over a single all-features implementation pass. Continue within the authorized build scope after satisfying phase gates; no routine repeated approval is required.
 
 Consequences: advanced functions remain mandatory. Each phase updates the roadmap and notes and remains incomplete until its required checks pass. Current authorization is to record the plan; implementation remains not started. Deployment and publication are separate outcomes. This ADR extends ADR-001/003 without changing the agreed stack or full functional scope.
+
+## ADR-005 — Explicit approval per phase
+
+Status: accepted by explicit user direction, 2026-10-28. Supersedes ADR-004's automatic transition rule and earlier instructions to continue without routine phase approval. Phase 0 is authorized. At every phase boundary, show deliverables, actual checks and limitations, then wait for explicit approval before starting the next phase. A blocked phase must be reported as incomplete, not submitted as a successful completion.

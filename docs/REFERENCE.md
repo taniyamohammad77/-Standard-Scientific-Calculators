@@ -53,3 +53,7 @@ REF-05 must establish dimensions, named storage, equation sizes, regression mode
 ## Reference work in the delivery plan
 
 [Phase 0](IMPLEMENTATION_PLAN.md) owns the reference baseline. Complete the applicable source/key/limit/precision evidence before implementing an affected capability in Phases 2–7. Carry explicitly unresolved device checks as tracked research items, never as assumed passing parity. Phase 8 audits the full requirement-to-evidence inventory.
+
+## Phase 0 access status
+
+See [PHASE_0_REPORT.md](PHASE_0_REPORT.md). Official support access is currently denied by the proxy; no manual-derived facts or exact capacities were verified. REF-01–09 remain pending. An environment draft adding support.casio.com is saved but is not an applied network policy. Nine independent numerical-library probes passed; they are not reference fixtures.

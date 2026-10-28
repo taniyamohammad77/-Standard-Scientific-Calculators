@@ -1,6 +1,6 @@
 # Validation and compatibility plan
 
-No application tests have been run for this documentation baseline. No implementation remains in the repository.
+No application tests have been run. Phase 0 has nine isolated candidate-library probes, recorded in PHASE_0_REPORT.md; they are not application or device-compatibility tests.
 
 ## Test layers
 
@@ -44,4 +44,4 @@ A library adoption spike must demonstrate editor template/cursor compatibility f
 
 ## Phase completion gates
 
-Use the evidence columns and completion-record template in the [implementation plan](IMPLEMENTATION_PLAN.md). Run meaningful checks as each feature is implemented; Phases 8–9 aggregate compatibility and release checks rather than deferring all testing until the end. Revalidate dependents after shared-engine changes. Record unrun, skipped, failing and passing checks separately; all phases currently remain Not started.
+Use the evidence columns and completion-record template in the [implementation plan](IMPLEMENTATION_PLAN.md). Run meaningful checks as each feature is implemented; Phases 8–9 aggregate compatibility and release checks rather than deferring all testing until the end. Revalidate dependents after shared-engine changes. Record unrun, skipped, failing and passing checks separately; Phase 0 is blocked on official-reference access; later phases remain Not started.

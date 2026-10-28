@@ -2,7 +2,7 @@
 
 ## Status and agreed stack
 
-The stack decision is recorded; no dependencies are installed and implementation remains paused.
+The stack decision is recorded. Isolated Phase 0 candidate dependencies are pinned under research/phase0; no application scaffold or application dependency manifest exists yet. See PHASE_0_REPORT.md for actual tests and unresolved compatibility work.
 
 | Layer | Decision | Constraint |
 |---|---|---|
