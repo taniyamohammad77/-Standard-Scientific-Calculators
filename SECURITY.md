@@ -36,3 +36,7 @@ If math.js is adopted, expose only selected typed operations behind adapters. Do
 Vite development services are development-only; never publish a development server as the production application. Audit production dependencies and worker bundles. PWA caching must exclude secrets, external executable resources and unvalidated state. Test security headers against the actual worker and rendering requirements rather than weakening policies globally to resolve integration errors.
 
 Include adversarial matrix/vector dimensions, oversized regression datasets, huge integer/base conversions and nonconvergent calculus/solve requests in resource-exhaustion tests. Full advanced functionality does not justify unbounded computation.
+
+## Security across delivery phases
+
+Apply security requirements throughout the [phase plan](docs/IMPLEMENTATION_PLAN.md): dependency/renderer review during Phase 0, safe parser and worker boundaries in Phases 1–3, adversarial mode limits in Phases 4–7, consolidated security checks in Phase 8 and tested production headers/PWA update controls in Phase 9. Do not defer input validation or computation bounds to the hardening phase. Report security gate failures in phase records without exposing secrets or sensitive exploit details.

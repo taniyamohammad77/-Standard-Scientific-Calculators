@@ -38,3 +38,11 @@ Consequences: all advanced modes remain mandatory. Library adoption requires evi
 - Project license and final branding.
 
 For each future ADR record: status, date, requirement IDs, context, options, evidence, decision, consequences and validation. Do not mark proposals accepted without the appropriate decision.
+
+## ADR-004 — Phase-by-phase development
+
+Status: accepted delivery approach by user direction, 2026-10-28.
+
+Decision: use IMPLEMENTATION_PLAN.md as the canonical Phases 0–9 roadmap, with explicit deliverables, dependencies, requirement mappings, status and completion evidence. Prefer tested vertical mode workflows over a single all-features implementation pass. Continue within the authorized build scope after satisfying phase gates; no routine repeated approval is required.
+
+Consequences: advanced functions remain mandatory. Each phase updates the roadmap and notes and remains incomplete until its required checks pass. Current authorization is to record the plan; implementation remains not started. Deployment and publication are separate outcomes. This ADR extends ADR-001/003 without changing the agreed stack or full functional scope.

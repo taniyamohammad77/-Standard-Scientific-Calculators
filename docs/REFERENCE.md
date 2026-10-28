@@ -49,3 +49,7 @@ Do not use marketing function counts as a completeness test. Completeness is mea
 The user explicitly requires all advanced functionality, including matrix operations, vector dot/cross products, complex arithmetic, simultaneous and quadratic/cubic equations, SOLVE, calculus, statistics/regression, BASE-N, TABLE and constants/conversions. These are mandatory implementation targets. The candidate label above describes unverified reference details and menu enumeration, not optional product scope.
 
 REF-05 must establish dimensions, named storage, equation sizes, regression models, base widths and table/data capacities. REF-06 must establish algorithmic inputs, domains, tolerances and observable failures. Evaluate candidate libraries only after capturing these reference fixtures. No official-manual research or library trial was completed as part of this document update.
+
+## Reference work in the delivery plan
+
+[Phase 0](IMPLEMENTATION_PLAN.md) owns the reference baseline. Complete the applicable source/key/limit/precision evidence before implementing an affected capability in Phases 2–7. Carry explicitly unresolved device checks as tracked research items, never as assumed passing parity. Phase 8 audits the full requirement-to-evidence inventory.

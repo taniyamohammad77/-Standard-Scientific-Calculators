@@ -12,6 +12,10 @@ MathLive is a candidate for a structured-editor adapter, subject to key/cursor/t
 
 Full scope includes matrices, vectors, complex numbers, simultaneous and quadratic/cubic equations, numerical SOLVE, integration, differentiation, summation, statistics/regression, BASE-N, TABLE, constants/conversions and all verified standard functions and SHIFT/ALPHA workflows. Advanced modes are required release scope; exact reference limits remain research items.
 
+## Delivery approach
+
+Development follows the [phase-by-phase implementation plan](docs/IMPLEMENTATION_PLAN.md), from reference verification through foundations, standard functions, advanced modes, hardening and offline release. Every phase has deliverables, requirement mappings and completion evidence. All implementation phases are currently not started.
+
 ## Read in this order
 
 1. [Product requirements](docs/PRD.md)

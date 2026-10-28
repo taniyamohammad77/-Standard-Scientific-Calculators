@@ -41,3 +41,7 @@ Use Vitest for numerical, grammar, reducer, adapter and worker integration tests
 Add explicit fixtures for vector dot/cross products (for example, unit x crossed with unit y equals unit z), matrix transpose/determinant/inverse and dimension failures, quadratic/cubic repeated and complex roots, simultaneous singular systems, complex polar conversions, regression degeneracy, signed BASE-N boundaries, TABLE row limits and catalog indexing. Validate mathematical expectations separately from observed device formatting and workflow.
 
 A library adoption spike must demonstrate editor template/cursor compatibility for MathLive and supported numeric-domain/precision behavior for math.js or decimal.js. No adoption on API availability alone. Full release requires every advanced-mode requirement PRD-06 through PRD-13 to have tests and evidence; passing the basic calculation suite is insufficient. PWA validation must cover offline reload after installation, upgrade, cache recovery and version consistency.
+
+## Phase completion gates
+
+Use the evidence columns and completion-record template in the [implementation plan](IMPLEMENTATION_PLAN.md). Run meaningful checks as each feature is implemented; Phases 8–9 aggregate compatibility and release checks rather than deferring all testing until the end. Revalidate dependents after shared-engine changes. Record unrun, skipped, failing and passing checks separately; all phases currently remain Not started.

@@ -39,13 +39,9 @@ The scope is functional compatibility with this model, including its limits. Do 
 
 ## 5. Delivery gates
 
-1. Reference baseline: official manual identified, mode/menu/key inventory complete, numerical policy and platform decisions recorded.
-2. Engine foundation: parser, numeric types, errors, precision and state tests.
-3. Standard calculation and editable natural input with keyboard/touch/accessibility support.
-4. Specialist modes and edition-specific catalogs, each with reference vectors.
-5. Full parity audit, numerical validation, security review and release documentation.
+The [phase-by-phase implementation plan](IMPLEMENTATION_PLAN.md) is the canonical delivery roadmap. It defines Phases 0–9, their dependencies, requirement coverage and evidence gates: reference/design, foundation, core mathematics, interaction, complex/BASE-N, matrices/vectors, equations/calculus, statistics/tables/catalogs, whole-calculator hardening and offline release readiness.
 
-These are implementation stages, not permission to omit remaining functions. A partial build must label incomplete capabilities and must not claim full parity.
+These are implementation stages, not permission to omit remaining functions. A partial build must label incomplete capabilities and must not claim full parity. Update the roadmap and update notes on phase completion; full release acceptance below still applies.
 
 ## 6. Release acceptance
 

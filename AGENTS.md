@@ -34,3 +34,7 @@ At the end of work report changes, checks actually run, remaining risks and requ
 Use React + TypeScript + Vite and CSS, a separate TypeScript engine in Web Workers, Vitest and Playwright. Plan PWA offline delivery after core validation; no backend/database is required. MathLive, math.js and decimal.js remain candidates requiring documented compatibility/security/license evaluation. Do not install dependencies in this documentation-only phase.
 
 Matrices, vectors, complex numbers, equations/SOLVE, calculus, statistics/regression, BASE-N, TABLE and constants/conversions are mandatory alongside standard functions and all verified modifier workflows. Never substitute a basic-calculator milestone for the complete scope. Every mode needs editing, state, formatting, errors and reference-backed tests, not only a numerical function call.
+
+## Phase-by-phase execution
+
+Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. When the broader build is authorized, continue across completed phase gates without asking for routine approval again. Escalate only genuine blockers or separately required external actions. This documentation update does not start implementation. All advanced modes remain required for final completion.

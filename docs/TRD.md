@@ -71,3 +71,7 @@ When implementation begins, add a pinned runtime/toolchain, dependency lockfile 
 - Calculus/table/catalog adapters: bounded algorithms, verified templates/table limits, edition-specific constants and unit conversions with provenance.
 
 Library outputs pass through mode-domain checks, numeric conversion rules and central formatting. Prevent a generic library expression evaluator from bypassing the validated application grammar or accessing assignments/imports/property paths. Each adapter requires independent mathematical tests and reference sequences.
+
+## Delivery sequencing
+
+The [implementation plan](IMPLEMENTATION_PLAN.md) governs Phases 0–9. Establish numeric/editor evidence before adoption, then build shared contracts before specialist modes. Performance budgets, typed errors, worker cancellation and security requirements apply from their first relevant implementation, not only during final hardening. Record tested commands and results at each completion gate.

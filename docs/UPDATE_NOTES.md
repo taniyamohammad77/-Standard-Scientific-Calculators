@@ -29,3 +29,9 @@ Updated README, PRD, TRD, architecture, reference register, validation plan, dev
 Made matrix/vector operations, complex mode, equations/SOLVE, calculus, statistics/regression, BASE-N, TABLE and constants/conversions explicit mandatory scope across design, testing and review. Added advanced-mode integration and stack-specific security requirements. Browser-first delivery is now decided; exact reference limits, precision, library suitability, persistence and hosting remain open. Earlier planning notes are historical and are superseded by ADR-003 where applicable.
 
 Validation: checked local Markdown links, balanced code fences, expected documentation inventory and agreement on stack/scope statements. Application implementation remains paused. No packages installed, no application tests run, no reference-manual review completed, and no deployment or parity claimed. The .gitignore already covers the selected stack's standard local dependencies/build/test artifacts and needed no change.
+
+## 2026-10-28 — Phase-by-phase delivery plan
+
+Added IMPLEMENTATION_PLAN.md with Phases 0–9: reference/design, project foundation, core mathematics, natural display/interaction, complex/BASE-N, matrices/vectors, equations/SOLVE/calculus, statistics/tables/catalogs, compatibility/security hardening and PWA/release readiness. Each phase includes deliverables, requirement coverage, completion evidence and initial Not started status. Defined dependencies, coherent increments and dated completion records.
+
+Linked the plan from README, PRD, TRD, architecture, reference, validation, developer rules, contribution guide and security policy; recorded ADR-004. Kept all advanced features mandatory and implementation paused. No dependencies, source code, application tests or deployment were added. Documentation validation covers local links, fences, whitespace, status count and phase coverage before committing and pushing this update.

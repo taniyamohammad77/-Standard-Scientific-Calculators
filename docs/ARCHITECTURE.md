@@ -68,3 +68,7 @@ MathLive/editor adapter suitability; numerical library/precision strategy; AST s
 ## Advanced mode composition
 
 Matrix/vector modes combine a dimension-aware data editor, per-mode named storage and typed operations. Equation mode combines coefficient forms and solution navigation; SOLVE belongs to the numerical algorithm service with its own context. Statistics owns dataset/frequency editing and regression selection. BASE-N owns radix and signed-integer policy. TABLE owns function/range input and bounded row generation. Complex mode owns complex display/domain settings. All share command routing, precision policies, typed errors and transactional worker results. No specialist mode may become an isolated calculator with inconsistent Ans, reset or modifier semantics.
+
+## Incremental implementation
+
+Follow the [phase plan](IMPLEMENTATION_PLAN.md): establish contracts in Phase 1, core values/grammar in Phase 2 and UI/editor/state integration in Phase 3. Phases 4–7 extend mode adapters without bypassing shared contracts. Phases 8–9 validate cross-mode compatibility and delivery. Keep module boundaries stable where possible; changes to numeric values, AST or worker protocols require affected regression tests and decision-log updates.
