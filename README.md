@@ -44,3 +44,7 @@ Use Node 24.19.0 (`.nvmrc`), then `npm ci` and `npm run dev`. Run `npm run build
 ## Scientific engine review
 
 See [Phase 2 report](docs/PHASE_2_REPORT.md) for supported syntax, project limits, screenshots and actual validation. Enter `1/3+1/6`, `sqrt(8)`, `sin(30)` or `log(8,2)` in Scientific mode. No exact-device-compatibility claim is made.
+
+## VS Code
+
+Open this repository folder, then choose **Terminal → Run Task → Start calculator**. See [VS Code instructions](docs/VSCODE.md) for prerequisites and troubleshooting.

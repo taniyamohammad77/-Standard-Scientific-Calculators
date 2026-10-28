@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Install calculator dependencies",
+      "type": "shell",
+      "command": "npm ci",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start calculator",
+      "type": "shell",
+      "command": "npm run dev -- --host 127.0.0.1 --port 5173 --strictPort",
+      "options": { "cwd": "${workspaceFolder}" },
+      "dependsOn": "Install calculator dependencies",
+      "dependsOrder": "sequence",
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": []
+    }
+  ]
+}
