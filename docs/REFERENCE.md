@@ -61,3 +61,7 @@ See [PHASE_0_REPORT.md](PHASE_0_REPORT.md). Official support access is currently
 ## Source S4 — User-supplied product specification
 
 Recorded the complete functional summary and physical/commercial distinctions in [PRODUCT_SPECIFICATION.md](PRODUCT_SPECIFICATION.md). S4 reports 417 functions, 10+2 digits, nine variables, memory protection, colon multi-statements, continuous calculation and replay/multi-replay. These are attributed user requirements, not independently verified manual facts. S4 has no original URL. REF-01–09 still require source/behavior verification. Do not infer internal precision from display digits or omit TABLE/regression scope because this summary does not enumerate it.
+
+## Revised research scope
+
+The user explicitly deferred the network/manual step. S1 and S4 now support the provisional design baseline in [PHASE_0_DESIGN.md](PHASE_0_DESIGN.md). REF-01–09 remain unverified and tracked. Their absence no longer blocks Phase 1 foundation work after user approval, but still prevents exact parity claims.

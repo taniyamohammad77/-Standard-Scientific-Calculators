@@ -79,3 +79,7 @@ The [implementation plan](IMPLEMENTATION_PLAN.md) governs Phases 0–9. Establis
 ## User-supplied specification constraints
 
 See PRODUCT_SPECIFICATION.md for S4. Implement colon-separated statements as validated structured sequences with bounded statement count, explicit execution/Ans updates and verified error/continuation semantics; never translate them to executable JavaScript. Nine-variable storage must use the verified variable whitelist. Display formatting must accommodate the reported 10+2 digits without treating that as internal precision. Rapid-input handling must preserve command ordering. Physical power/memory claims do not define web persistence automatically.
+
+## Current implementation baseline
+
+[PHASE_0_DESIGN.md](PHASE_0_DESIGN.md) selects provisional adapter roles, numeric precision, AST boundaries, worker budgets and session-state policy. These guide Phase 1 after approval. Device-specific precision, limits and behavior remain deferred; the project settings must not be described as Casio specifications.

@@ -1,6 +1,8 @@
 # Phase 0 — Research progress and blocker
 
-Date: 2026-10-28. Status: **Blocked / incomplete**. Phase 1 is not started or approved.
+Date: 2026-10-28. Current status: **Complete under revised scope; awaiting user review**. Phase 1 is not started or approved.
+
+The user subsequently deferred network/manual verification. See [PHASE_0_DESIGN.md](PHASE_0_DESIGN.md) for current decisions and deferred evidence. The blocker narrative below records earlier research results; it is not the current phase gate.
 
 ## Scope and results
 

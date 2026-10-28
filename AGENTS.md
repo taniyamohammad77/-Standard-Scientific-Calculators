@@ -37,4 +37,4 @@ Matrices, vectors, complex numbers, equations/SOLVE, calculus, statistics/regres
 
 ## Phase-by-phase execution
 
-Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 0 is now in progress; later phases remain unapproved. All advanced modes remain required for final completion.
+Follow docs/IMPLEMENTATION_PLAN.md as the canonical sequence. Work in reviewable increments, satisfy each phase's evidence gates and update its status plus docs/UPDATE_NOTES.md. The user explicitly requires approval after every phase; do not cross a phase boundary without it. Escalate only genuine blockers or separately required external actions. Phase 0 is ready for review under revised scope; Phase 1 remains unapproved. All advanced modes remain required for final completion.

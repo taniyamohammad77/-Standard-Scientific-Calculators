@@ -50,3 +50,7 @@ Consequences: advanced functions remain mandatory. Each phase updates the roadma
 ## ADR-005 — Explicit approval per phase
 
 Status: accepted by explicit user direction, 2026-10-28. Supersedes ADR-004's automatic transition rule and earlier instructions to continue without routine phase approval. Phase 0 is authorized. At every phase boundary, show deliverables, actual checks and limitations, then wait for explicit approval before starting the next phase. A blocked phase must be reported as incomplete, not submitted as a successful completion.
+
+## ADR-006 — Proceed with a provisional reference baseline
+
+Status: user-authorized scope change; engineering choices ready for review. The user asked to leave network setup and proceed with S1/S4. Official research REF-01–09 is deferred, not verified. PHASE_0_DESIGN.md records bounded numerical/editor choices and a traceability baseline. Phase 0 is complete under this revised research scope and awaits review. Exact compatibility remains unproven; all advanced features remain required. ADR-005's explicit per-phase approval remains in force.

@@ -2,7 +2,7 @@
 
 Planning baseline for an independent calculator targeting the functionality and interaction model of the **Casio fx-991ES PLUS, 2nd edition** shown in the user's reference image.
 
-**Status:** Phase 0 research started; official-reference access is blocked. Phase 1 has not started. This repository currently contains no runnable calculator, dependency manifest, or passing application tests. The earlier prototype has been removed from this checkout and preserved outside it for recovery.
+**Status:** Phase 0 design complete under user-revised scope; awaiting approval for Phase 1. Phase 1 has not started. This repository currently contains no runnable calculator, dependency manifest, or passing application tests. The earlier prototype has been removed from this checkout and preserved outside it for recovery.
 
 ## Agreed stack and scope
 
@@ -32,3 +32,5 @@ The goal is complete functional parity, not a basic arithmetic substitute. Parit
 ## Additional reference evidence
 
 The [user-supplied specification](docs/PRODUCT_SPECIFICATION.md) adds display, memory, replay and multi-statement requirements. Phase 0 now includes nine numerical and seven editor smoke probes; official manual verification remains blocked. See the phase report for limitations.
+
+Current review package: [Phase 0 design](docs/PHASE_0_DESIGN.md). Official-manual verification is deferred at user direction; full parity is not claimed.

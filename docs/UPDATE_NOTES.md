@@ -43,3 +43,7 @@ Recorded explicit per-phase approval in ADR-005 and current execution rules. Add
 ## 2026-10-28 — Phase 0 resumed and product specification captured
 
 Rechecked official support access; CONNECT 403 persists and custom allowed hosts remain empty. Ran the isolated MathLive browser probe: seven checks passed; captured harness/results added. Recorded user-supplied product list as S4 in PRODUCT_SPECIFICATION.md, separating app functions from physical/commercial claims. Updated PRD/TRD/validation/reference mappings for nine variables, 10+2 display, multi-statements, memory protection and replay. Official limits/precision still unverified; Phase 0 remains incomplete, with no Phase 1 work.
+
+## Phase 0 review package — revised reference scope
+
+Following the user's direction to leave network/manual setup, recorded PHASE_0_DESIGN.md with AST/value boundaries, provisional precision, library adapter decisions, worker budgets, state policy and requirement-to-validation mapping. Preserved REF-01–09 as deferred compatibility gaps. Phase 0 is complete under the revised scope and awaits user review; Phase 1 is not started. Existing nine numerical/seven editor probes are prior evidence, not newly executed application tests. Validated documentation links, fences and whitespace.
